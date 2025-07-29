@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formula 1 - 2025 Season</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="Assets/index.css">
+    </head>
+    <body class="bg-gray-900 text-white font-sans">
+        <!-- Navigation -->
+        <nav class="navbar-gradient fixed w-full z-50">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="text-red-600 text-3xl font-bold">
+                        <i class="fas fa-flag-checkered"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
+                        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/2560px-F1.svg.png" alt="F1 Logo" class="logo">
+
+                    </h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#teams" class="hover:text-red-500 transition">Teams</a>
+                    <a href="#drivers" class="hover:text-red-500 transition">Drivers</a>
+                    <a href="#season" class="hover:text-red-500 transition">Season</a>
+                    <a href="#calendar" class="hover:text-red-500 transition">Calendar</a>
+                </div>
+                <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <div class="md:hidden hidden absolute top-full left-0 w-full bg-gray-900 py-4 px-4 shadow-lg" id="mobile-menu">
+                    <div class="flex flex-col space-y-4">
+                        <a href="#teams" class="hover:text-red-500 transition">Teams</a>
+                        <a href="#drivers" class="hover:text-red-500 transition">Drivers</a>
+                        <a href="#season" class="hover:text-red-500 transition">Season</a>
+                        <a href="#calendar" class="hover:text-red-500 transition">Calendar</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Hero Section -->
+        <header class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-gray-900 to-gray-800">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    <span class="bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent"> F1 TEAMS 2025</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    Find the current Formula 1 teams for the 2025 season
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#season" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition">
+                        Latest News
+                    </a>
+                    <a href="#calendar" class="bg-transparent border-2 border-red-600 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold transition">
+                        Season Calendar
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main id="teams" class="teams-container pt-20">
+        <!-- McLaren -->
+        <div class="team-card">
+            <div class="team-header" style="background-color: #FF8700;">
+                <img src="https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/mclaren/2025mclarencarright.webp" alt="McLaren" class="team-logo">
+                <h2>McLaren F1 Team</h2>
+                <!--<p>McLaren</p>-->
+            </div>
+            <div class="drivers">
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/mclaren/oscpia01/2025mclarenoscpia01right.webp" 
+                    alt="Lando Norris" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;">
+                    <div class="driver-info">
+                        <h3><span class="driver-number">81</span> Oscar Piastri</h3>
+                        <p>Australia</p>
+                    </div>
+                </div>
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/mclaren/lannor01/2025mclarenlannor01right.webp" 
+                    alt="Lando Norris" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;">
+                    <div class="driver-info">
+                        <h3><span class="driver-number">4</span> Lando Norris</h3>
+                        <p>United Kingdom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ferrari -->
+        <div class="team-card">
+            <div class="team-header" style="background-color: #DC0000;">
+                <img src="https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/ferrari/2025ferraricarright.webp" alt="Ferrari" class="team-logo">
+                <h2>Ferrari</h2>
+                <!--<p>Ferrari</p>-->
+            </div>
+            <div class="drivers">
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/ferrari/chalec01/2025ferrarichalec01right.webp" 
+                    alt="Charles Leclerc" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;">
+                    <div class="driver-info">
+                        <h3><span class="driver-number">16</span> Charles Leclerc</h3>
+                        <p>Poland</p>
+                    </div>
+                </div>
+                <div class="driver"> 
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/ferrari/lewham01/2025ferrarilewham01right.webp" 
+                    alt="Lewis Hamilton" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;">
+                    <div class="driver-info">
+                        <h3><span class="driver-number">44</span> Lewis Hamilton </h3>
+                        <p>Great Britin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mercedes -->
+        <div class="team-card">
+            <div class="team-header" style="background-color: #00D2BE;">
+                <img src="https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/mercedes/2025mercedescarright.webp" alt="Mercedes" class="team-logo">
+                <h2>Mercedes</h2>
+                <!--<p>Mercedes</p>-->
+            </div>
+            <div class="drivers">
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/mercedes/georus01/2025mercedesgeorus01right.webp" 
+                    alt="George Russell " class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;"> 
+                    <div class="driver-info">
+                        <h3><span class="driver-number">63</span> George Russell </h3>
+                        <p>United Kingdom</p>
+                    </div>
+                </div>
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/mercedes/andant01/2025mercedesandant01right.webp" 
+                    alt="Kimi Antonelli" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;"> 
+                    <div class="driver-info">
+                        <h3><span class="driver-number">22</span> Kimi Antonelli </h3>
+                        <p>United Kingdom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Red Bull Racing -->
+        <div class="team-card">
+            <div class="team-header" style="background-color: #0600EF;">
+                <img src="https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/redbullracing/2025redbullracingcarright.webp" alt="Red Bull Racing" class="team-logo">
+                <h2>Red Bull Racing</h2>
+            </div>
+            <div class="drivers">
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/redbullracing/maxver01/2025redbullracingmaxver01right.webp" 
+                    alt="Max Verstappen" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;"> 
+                    <div class="driver-info">
+                        <h3><span class="driver-number">1</span> Max Verstappen</h3>
+                        <p>Netherlands</p>
+                    </div>
+                </div>
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/redbullracing/yuktsu01/2025redbullracingyuktsu01right.webp" 
+                    alt="Yuki Tsunoda" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;">                    
+                    <div class="driver-info">
+                        <h3><span class="driver-number">11</span> Sergio Pérez</h3>
+                        <p>Mexico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Williams -->
+        <div class="team-card">
+            <div class="team-header" style="background-color: #005AFF;">
+                <img src="https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/williams/2025williamscarright.webp" alt="Williams" class="team-logo">
+                <h2>Williams</h2>
+            </div>
+            <div class="drivers">
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/williams/alealb01/2025williamsalealb01right.webp" 
+                    alt="Alexander Albon" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;">      
+                    <div class="driver-info">
+                        <h3><span class="driver-number">23</span> Alexander Albon </h3>
+                        <p>Thailand</p>
+                    </div>
+                </div>
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/williams/carsai01/2025williamscarsai01right.webp" 
+                    alt="Carlos Sainz" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;">      
+                    <div class="driver-info">
+                        <h3><span class="driver-number">55</span> Carlos Sainz </h3>
+                        <p>Spain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Kick Sauber -->
+        <div class="team-card">
+            <div class="team-header" style="background-color: #52E252;">
+                <img src="https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/kicksauber/2025kicksaubercarright.webp" alt="Sauber" class="team-logo">
+                <h2>Kick Sauber</h2>
+            </div>
+            <div class="drivers">
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/kicksauber/nichul01/2025kicksaubernichul01right.webp" 
+                    alt="Carlos Sainz" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;"> 
+                    <div class="driver-info">
+                        <h3><span class="driver-number">27</span> Nico Hulkenberg </h3>
+                        <p>Germany</p>
+                    </div>
+                </div>
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/kicksauber/gabbor01/2025kicksaubergabbor01right.webp" 
+                    alt="Carlos Sainz" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;"> 
+                    <div class="driver-info">
+                        <h3><span class="driver-number">5</span> Gabriel Bortoleto </h3>
+                        <p>Brazil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Racing Bulls -->
+        <div class="team-card">
+            <div class="team-header" style="background-color: #2B4562;">
+                <img src="https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/racingbulls/2025racingbullscarright.webp" alt="AlphaTauri" class="team-logo">
+                <h2>Racing Bulls</h2>
+            </div>
+            <div class="drivers">
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/racingbulls/lialaw01/2025racingbullslialaw01right.webp" 
+                    alt="Liam Lawson" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;">                    
+                    <div class="driver-info">
+                        <h3><span class="driver-number">30</span> Liam Lawson </h3>
+                        <p>New Zealand</p>
+                    </div>
+                </div>
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/racingbulls/isahad01/2025racingbullsisahad01right.webp" 
+                    alt="Isack Hadjar" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;">                   
+                    <div class="driver-info">
+                        <h3><span class="driver-number">6</span> Isack Hadjar </h3>
+                        <p>France</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Aston Martin -->
+        <div class="team-card">
+            <div class="team-header" style="background-color: #006F62;">
+                <img src="https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/astonmartin/2025astonmartincarright.webp" alt="Aston Martin" class="team-logo">
+                <h2>Aston Martin</h2>
+            </div>
+            <div class="drivers">
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/astonmartin/lanstr01/2025astonmartinlanstr01right.webp" 
+                    alt="Lance Stroll" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;">  
+                    <div class="driver-info">
+                        <h3><span class="driver-number">18</span> Lance Stroll </h3>
+                        <p>Canada</p>
+                    </div>
+                </div>
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/astonmartin/feralo01/2025astonmartinferalo01right.webp" 
+                    alt="Fernando Alonso" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;">  
+                    <div class="driver-info">
+                        <h3><span class="driver-number">14</span> Fernando Alonso </h3>
+                        <p>Spain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Haas -->
+        <div class="team-card">
+            <div class="team-header" style="background-color: #4D5052;">
+                <img src="https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/haas/2025haascarright.webp" alt="Haas" class="team-logo">
+                <h2>Haas</h2>
+            </div>
+            <div class="drivers">
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/haas/estoco01/2025haasestoco01right.webp" 
+                    alt="Esteban Ocan" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;"> 
+                    <div class="driver-info">
+                        <h3><span class="driver-number">31</span> Esteban Ocan </h3>
+                        <p>France</p>
+                    </div>
+                </div>
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/haas/olibea01/2025haasolibea01right.webp" 
+                    alt="Oliver Bearman" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;"> 
+                    <div class="driver-info">
+                        <h3><span class="driver-number">87</span> Oliver Bearman </h3>
+                        <p>Great Britin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Alpine -->
+        <div class="team-card">
+            <div class="team-header" style="background-color: #0090FF;">
+                <img src="https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/alpine/2025alpinecarright.webp" alt="Alpine" class="team-logo">
+                <h2>Alpine</h2>
+            </div>
+            <div class="drivers">
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/alpine/piegas01/2025alpinepiegas01right.webp" 
+                    alt="Pierre Gasly" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;"> 
+                    <div class="driver-info">
+                        <h3><span class="driver-number">10</span> Pierre Gasly </h3>
+                        <p>France</p>
+                    </div>
+                </div>
+                <div class="driver">
+                    <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/alpine/fracol01/2025alpinefracol01right.webp" 
+                    alt="Franco Colapinto" class="driver-img object-top object-cover" style="height: 80px; width: 80px; object-position: top;"> 
+                    <div class="driver-info">
+                        <h3><span class="driver-number">43</span> Franco Colapinto </h3>
+                        <p>France</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Drivers Spotlight -->
+    <section id="drivers" class="py-12 md:py-16 lg:py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <span class="border-b-4 border-red-600 pb-2">DRIVERS SPOTLIGHT</span>
+            </h2>
+            <div class="slider-container relative w-full mx-auto overflow-hidden">
+                <div class="slider-track flex transition-transform duration-300 ease-in-out">
+                <!--McLaren-->
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/mclaren/oscpia01/2025mclarenoscpia01right.webp" 
+                            alt="Oscar Piastri" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold">Oscar Piastri</h3>
+                                <p class="text-red-400 mb-2">McLaren</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/mclaren/lannor01/2025mclarenlannor01right.webp" 
+                            alt="Lando Norris" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold">Lando Norris</h3>
+                                <p class="text-red-400 mb-2">McLaren</p>
+                            </div>
+                        </div>
+                    </div>
+                <!--Ferrari-->
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/ferrari/chalec01/2025ferrarichalec01right.webp" 
+                            alt="Charles Leclerc" alt="Lando Norris" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold">Charles Leclerc</h3>
+                                <p class="text-red-400 mb-2">Ferrari</p>
+                                <!--<p class="text-gray-400">Future Champion</p>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/ferrari/lewham01/2025ferrarilewham01right.webp" 
+                            alt="Lewis Hamilton" alt="Lando Norris" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold">Lewis Hamilton</h3>
+                                <p class="text-red-400 mb-2">Ferrari</p>
+                                <!--<p class="text-gray-400">Rising Star</p>-->
+                            </div>
+                        </div>
+                    </div>
+                <!--Mercedes-->
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/mercedes/georus01/2025mercedesgeorus01right.webp" 
+                            alt="George Russell" alt="Lando Norris" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold">George Russell</h3>
+                                <p class="text-red-400 mb-2">Mercedes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/mercedes/andant01/2025mercedesandant01right.webp" 
+                            alt="Oscar Piastri" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold">Kimi Antonelli</h3>
+                                <p class="text-red-400 mb-2">Mercedes</p>
+                            </div>
+                        </div>
+                    </div>
+                <!--Red Bull Racing-->
+                    <div class="slider-slide min-w-full md:min-w-1/2 lg:min-w-1/3 px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden h-full flex flex-col">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/redbullracing/maxver01/2025redbullracingmaxver01right.webp" 
+                            alt="Max Verstappen" alt="Lando Norris" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-4 md:p-6 flex-grow">
+                                <h3 class="text-xl font-bold">Max Verstappen</h3>
+                                <p class="text-red-400 mb-2">Red Bull Racing</p>
+                                <!--<p class="text-red-400">3x World Champion</p>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/redbullracing/yuktsu01/2025redbullracingyuktsu01right.webp" 
+                            alt="Yuki Tsunoda" alt="Lando Norris" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold">Yuki Tsunoda</h3>
+                                <p class="text-red-400 mb-2">Red Bull Racing</p>
+                                <!--<p class="text-gray-400">7x World Champion</p>-->
+                            </div>
+                        </div>
+                    </div>
+                <!--Williams-->
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/williams/alealb01/2025williamsalealb01right.webp" 
+                            alt="Alexander Albon" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold">Alexander Albon</h3>
+                                <p class="text-red-400 mb-2">Williams</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/williams/carsai01/2025williamscarsai01right.webp" 
+                            alt="Carlos Sainz" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold">Carlos Sainz</h3>
+                                <p class="text-red-400 mb-2">Williams</p>
+                            </div>
+                        </div>
+                    </div>
+                <!--kick sauber-->
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/kicksauber/nichul01/2025kicksaubernichul01right.webp" 
+                            alt="Nico Hulkenberg" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold"> Nico Hulkenberg </h3>
+                                <p class="text-red-400 mb-2">kick sauber</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/kicksauber/gabbor01/2025kicksaubergabbor01right.webp" 
+                            alt="Gabriel Bortoleto" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold"> Gabriel Bortoleto </h3>
+                                <p class="text-red-400 mb-2">kick sauber</p>
+                            </div>
+                        </div>
+                    </div>
+                <!--Racing Bulls-->
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/racingbulls/lialaw01/2025racingbullslialaw01right.webp" 
+                            alt="Liam Lawson" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold"> Liam Lawson </h3>
+                                <p class="text-red-400 mb-2">Racing Bulls</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/racingbulls/isahad01/2025racingbullsisahad01right.webp" 
+                            alt="Isack Hadjar" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold"> Isack Hadjar </h3>
+                                <p class="text-red-400 mb-2">Racing Bulls</p>
+                            </div>
+                        </div>
+                    </div>
+                <!--Aston Martin-->
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/astonmartin/lanstr01/2025astonmartinlanstr01right.webp" 
+                            alt="Lance Stroll" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold"> Lance Stroll </h3>
+                                <p class="text-red-400 mb-2">Aston Martin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/astonmartin/feralo01/2025astonmartinferalo01right.webp" 
+                            alt="Fernando Alonso" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold"> Fernando Alonso </h3>
+                                <p class="text-red-400 mb-2">Aston Martin</p>
+                            </div>
+                        </div>
+                    </div>
+                <!--Haas-->
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/haas/estoco01/2025haasestoco01right.webp" 
+                            alt="Esteban Ocon" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold"> Esteban Ocon </h3>
+                                <p class="text-red-400 mb-2">Haas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/haas/olibea01/2025haasolibea01right.webp" 
+                            alt="Oliver Bearman" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold"> Oliver Bearman </h3>
+                                <p class="text-red-400 mb-2">Haas</p>
+                            </div>
+                        </div>
+                    </div>
+                <!--Alpine-->
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/alpine/piegas01/2025alpinepiegas01right.webp" 
+                            alt="Pierre Gasly" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold"> Pierre Gasly </h3>
+                                <p class="text-red-400 mb-2">Alpine</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide min-w-full px-4">
+                        <div class="driver-card bg-gray-800 rounded-xl overflow-hidden">
+                            <img src="https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000000/common/f1/2025/alpine/fracol01/2025alpinefracol01right.webp" 
+                            alt="Franco Colapinto" class="w-full h-64 md:h-72 lg:h-80 object-cover object-top" style="object-position: top;">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold"> Franco Colapinto </h3>
+                                <p class="text-red-400 mb-2">Alpine</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-button prev absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white p-3 rounded-full hover:bg-red-600 transition">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-button next absolute right-0 top-1/2 -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white p-3 rounded-full hover:bg-red-600 transition">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="slider-dots flex justify-center mt-8 space-x-3">
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="0"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="1"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="2"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="3"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="4"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="5"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="6"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="7"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="8"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="9"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="10"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="11"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="12"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="13"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="14"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="15"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="16"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="17"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="18"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-600 hover:bg-red-600 transition" data-index="19"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Season Preview -->
+    <section id="season" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">
+                <span class="border-b-4 border-red-600 pb-2">2025 SEASON PREVIEW</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-700 bg-opacity-50 rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-red-400">Technical Changes</h3>
+                    <p class="mb-4 text-gray-300">The 2025 season introduces new aerodynamic regulations aimed at improving overtaking opportunities and reducing the "dirty air" effect that makes following other cars difficult.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-red-400 mt-1 mr-2"></i>
+                            <span>Simplified front wing designs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-red-400 mt-1 mr-2"></i>
+                            <span>Revised rear wing configurations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-red-400 mt-1 mr-2"></i>
+                            <span>New sustainable fuel requirements</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-700 bg-opacity-50 rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-red-400">Calendar Highlights</h3>
+                    <p class="mb-4 text-gray-300">The 2025 calendar features 24 races, including the return of the South African Grand Prix and a new street circuit in Seoul, South Korea.</p>
+                    <div class="flex justify-between items-center bg-gray-600 p-3 rounded-lg mb-3">
+                        <div>
+                            <h4 class="font-semibold">Season Opener</h4>
+                            <p class="text-sm text-gray-300">Bahrain Grand Prix</p>
+                        </div>
+                        <div class="text-red-400 font-bold">March 2</div>
+                    </div>
+                    <div class="flex justify-between items-center bg-gray-600 p-3 rounded-lg">
+                        <div>
+                            <h4 class="font-semibold">Season Finale</h4>
+                            <p class="text-sm text-gray-300">Abu Dhabi Grand Prix</p>
+                        </div>
+                        <div class="text-red-400 font-bold">December 7</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar -->
+    <section id="calendar" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <span class="border-b-4 border-red-600 pb-2">2025 RACE CALENDAR</span>
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-white">
+                    <thead class="bg-gray-700">
+                        <tr>
+                            <th class="px-6 py-3 text-left">Race</th>
+                            <th class="px-6 py-3 text-left">Circuit</th>
+                            <th class="px-6 py-3 text-left">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700">
+                        <tr class="hover:bg-gray-700">
+                            <td class="px-6 py-4">Bahrain GP</td>
+                            <td class="px-6 py-4">Bahrain International Circuit</td>
+                            <td class="px-6 py-4">March 2</td>
+                        </tr>
+                        <tr class="hover:bg-gray-700">
+                            <td class="px-6 py-4">Saudi Arabian GP</td>
+                            <td class="px-6 py-4">Jeddah Corniche Circuit</td>
+                            <td class="px-6 py-4">March 9</td>
+                        </tr>
+                        <tr class="hover:bg-gray-700">
+                            <td class="px-6 py-4">Australian GP</td>
+                            <td class="px-6 py-4">Albert Park Circuit</td>
+                            <td class="px-6 py-4">March 23</td>
+                        </tr>
+                        <tr class="hover:bg-gray-700">
+                            <td class="px-6 py-4">Japanese GP</td>
+                            <td class="px-6 py-4">Suzuka Circuit</td>
+                            <td class="px-6 py-4">April 6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-red-500">FORMULA 1</h3>
+                    <p class="text-gray-400">The pinnacle of motorsport since 1950. Follow all the action from the 2025 FIA Formula One World Championship.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-white">Teams</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">Red Bull</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">Mercedes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">Ferrari</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">McLaren</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-white">Drivers</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">Max Verstappen</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">Lewis Hamilton</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">Charles Leclerc</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">Lando Norris</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-white">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-red-500 transition text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-red-500 transition text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-red-500 transition text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-red-500 transition text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="text-gray-400">Subscribe to our newsletter for the latest updates</p>
+                    <div class="mt-3 flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-lg focus:outline-none w-full">
+                        <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-r-lg transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>© 2025 Formula One World Championship Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="Assets/index.js"></script> 
+    </body>
+</html>

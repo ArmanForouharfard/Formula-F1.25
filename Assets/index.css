@@ -1,0 +1,209 @@
+            :root {
+                --f1rd-colour-surface-neutral-surface-neutral-3: #1e1e1e;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Arial', sans-serif;
+            }
+
+            body {
+                background-color: #f5f5f5;
+                color: #333;
+            }
+
+            .navbar {
+                background: linear-gradient(180deg, rgb(from var(--f1rd-colour-surface-neutral-surface-neutral-3) r g b / 0) 0%, rgb(from var(--f1rd-colour-surface-neutral-surface-neutral-3) r g b / 1) 100%);
+                padding: 1rem 2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                position: sticky;
+                top: 0;
+                z-index: 100;
+            }
+
+            .logo{
+                max-width: 16%; /* 20% */
+                height: auto;
+            }
+
+            .inner-navbar{
+                background: rgba(30, 30, 30, 0);
+            }
+
+            :root {
+                --f1rd-colour-surface-neutral-surface-neutral-3: #1e1e1e;
+            }
+
+            .navbar-gradient {
+                background: linear-gradient(180deg, rgba(30, 30, 30, 0) 0%, rgba(30, 30, 30, 1) 100%);
+            }
+
+            #mobile-menu {
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                z-index: 40;
+            }
+
+            #mobile-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #1e1e1e;
+                padding: 1rem;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                z-index: 40;
+            }
+
+            #mobile-menu.show {
+                display: flex;
+            }
+
+            #mobile-menu a {
+                padding: 0.75rem 1rem;
+                border-radius: 0.25rem;
+                transition: all 0.2s ease;
+                display: block;
+                color: white;
+                font-size: 1.1rem;
+            }
+
+            #mobile-menu a:hover {
+                background-color: rgba(239, 68, 68, 0.2);
+                color: #ef4444;
+            }
+
+            .team-card {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .team-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            .driver-card {
+                transition: all 0.3s ease;
+            }
+
+            .driver-card:hover {
+                transform: scale(1.03);
+            }
+            /* Slider Styles */
+            .slider-container {
+                overflow: hidden;
+            }
+
+            .slider-track {
+                display: flex;
+            }
+
+            .slider-slide {
+                transition: transform 0.3s ease;
+            }
+
+            .slider-button {
+                z-index: 10;
+                transform: translateY(-50%);
+            }
+
+            .dot.active {
+                background-color: #ef4444;
+            }
+
+            @media (min-width: 768px) {
+                .slider-slide {
+                    min-width: 50%;
+                }
+            }
+
+            @media (min-width: 1024px) {
+                .slider-slide {
+                    min-width: 33.33%;
+                }
+            }
+            .teams-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+             }
+            .team-card {
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .team-card:hover {
+                transform: translateY(-10px);
+            }
+
+            .team-header {
+                padding: 1.5rem;
+                color: white;
+                text-align: center;
+            }
+
+            .team-header h2 {
+                font-size: 1.8rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .team-header p {
+                font-size: 1rem;
+                opacity: 0.9;
+            }
+
+            .team-logo {
+                height: 90px; /* 120px (for downloaded images) */
+                margin-bottom: 1rem;
+            }
+
+            .drivers {
+                background-color: white;
+                padding: 1.5rem;
+            }
+
+            .driver {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid #eee;
+            }
+
+            .driver:last-child {
+                margin-bottom: 0;
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+
+            .driver-img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 1rem;
+                border: 3px solid #eee;
+            }
+
+            .driver-info h3 {
+                font-size: 1.2rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .driver-info p {
+                color: #666;
+                font-size: 0.9rem;
+            }
+
+            .driver-number {
+                font-weight: bold;
+                color: #333;
+            }
